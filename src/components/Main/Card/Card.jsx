@@ -1,9 +1,12 @@
 import React from 'react';
+import {ToastContainer, toast } from 'react-toastify';
 import priceIcon from '../../../assets/icon.png'
 import './card.css';
 
 export default function Card({ meal }) {
+   const notify = () => toast(`You rated ${meal.name} a ${meal.rating}!`);
   const statusClass = meal.status === 'Open' ? 'status-open' : 'status-closed';
+
   return (
     <div className="meal-card">
         <div className="card-image-container">
@@ -26,13 +29,14 @@ export default function Card({ meal }) {
           </div>
           
           <div className="card-row">
-            <span className="rating">⭐ {meal.rating ? meal.rating.toFixed(1) : 'N/A'}</span>
+            <span onClick={notify} className="rating">⭐ {meal.rating ? meal.rating.toFixed(1) : 'N/A'}</span>
           </div>
 
           <div className="card-row">
             <span className={`status ${statusClass}`}>{meal.status}</span>
           </div>
         </div>
+        <ToastContainer />
       </div>
     );
 }

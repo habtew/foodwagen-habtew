@@ -5,7 +5,10 @@ import Header from './components/header/Header'
 import Hero from './components/hero/Hero'
 import Main from './components/Main/Main'
 import Footer from './components/Footer/Footer'
+import AddMealModal from './components/Modals/AddMealModal'
 import './App.css'
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const API_URL = 'https://6852821e0594059b23cdd834.mockapi.io/Food'
@@ -17,6 +20,7 @@ function App() {
   const [allMeals, setAllMeals] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
  useEffect(() => {
     const fetchMeals = async () => {
@@ -48,13 +52,35 @@ function App() {
     fetchMeals();
   }, []);
 
+  const handleMealAdded = (newMeal) => {
+    const formattedMeal = {
+      ...newMeal,
+      image: newMeal.avatar,
+      status: newMeal.open ? 'Open' : 'Closed',
+    };
+    setAllMeals(prevMeals => [formattedMeal, ...prevMeals]);
+  };
+
+
   const filteredMeals = allMeals.filter(meal => 
     meal.name.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
   return (
     <div className='app'>
-      <Header />
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
+      <Header onAddMealClick={() => setIsModalOpen(true)}/>
       <Hero 
         searchQuery={searchQuery} 
         setSearchQuery={setSearchQuery} 
@@ -65,6 +91,12 @@ function App() {
         error={error}
         />
         <Footer />
+        {isModalOpen && (
+        <AddMealModal 
+          closeModal={() => setIsModalOpen(false)}
+          onMealAdded={handleMealAdded}
+        />
+      )}
     </div>
   )
 }

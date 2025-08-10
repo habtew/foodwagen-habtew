@@ -2,7 +2,7 @@ import React from "react";
 import logo from '../../assets/logo.png'
 import './header.css'
 
-export default function Header() {
+export default function Header({ onAddMealClick }) {
     return (
         <header className="header">
             <p>
@@ -11,7 +11,7 @@ export default function Header() {
                 </div>
                 <span className="food">Food</span><span className="wagen">Wagen</span>
             </p>
-            <button className="addmeal-btn">Add Meal</button>
+            <button className="addmeal-btn" onClick={onAddMealClick}>Add Meal</button>
         </header>
     )
 }

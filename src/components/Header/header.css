@@ -54,7 +54,13 @@
     border-radius: 14px;
     border: none;
     background: linear-gradient(98deg, #FFBA26 -8.95%, #FF9A0E 109.24%);
+    color: white;
+    cursor: pointer;
 
     /* Shadow/1 */
     box-shadow: 0 5px 10px 0 rgba(255, 174, 0, 0.26), 0 20px 40px 0 rgba(255, 174, 0, 0.29);
+}
+
+.addmeal-btn:hover {
+  background-color: #fca903;
 }
