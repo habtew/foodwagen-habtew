@@ -1,0 +1,75 @@
+.main-content {
+    padding: 3rem 6rem; 
+    background-color: #f9fafb; 
+    display: flex;
+    flex-direction: column;
+}
+
+.main-title {
+    color: #212121;
+    text-align: center;
+
+    /* Headline 4 Bold */
+    font-family: "Source Sans Pro";
+    font-size: 43px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 112%;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.no-meals-found {
+    text-align: center;
+    grid-column: 1 / -1;
+    color: #888;
+    padding: 2rem;
+}
+
+.load-more-btn {
+    display: flex;
+    align-self: center;
+    margin-block: 3em;
+    padding: 21px 48px;
+    gap: 10px;
+    border-radius: 14px;
+    color: white;
+    /* background-color: linear-gradient(98deg, #FFBA26 -8.95%, #FF9A0E 109.24%); */
+
+    /* Shadow/1 */
+    border-radius: 14px;
+    background: linear-gradient(98deg, #FFBA26 -8.95%, #FF9A0E 109.24%);
+
+
+    box-shadow: 0 5px 10px 0 rgba(255, 174, 0, 0.26), 0 20px 40px 0 rgba(255, 174, 0, 0.29);
+    border: none;
+    cursor: pointer;
+    color: #FFF;
+    text-align: center;
+
+    font-family: "Source Sans Pro";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+.load-more-btn:hover {
+    background-color: #fdecd8;
+}
+
+.status-message {
+    text-align: center;
+    grid-column: 1 / -1;
+    color: #888;
+    padding: 2rem;
+    font-size: 1.2rem;
+}
+
+.status-message.error {
+    color: #d32f2f;
+}
