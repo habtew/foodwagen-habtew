@@ -1,0 +1,159 @@
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFB30E;
+    padding: 4rem 6rem;
+    gap: 2rem;
+    min-height: 50vh;
+    padding-bottom: 0;
+}
+
+.hero-detail {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hero-detail > h2 {
+    color: #FFF;
+
+    /* Object shadow 2 */
+    text-shadow: 0 14px 15px rgba(255, 174, 0, 0.01), 0 27px 82px rgba(255, 174, 0, 0.28);
+
+    font-family: "Source Sans Pro";
+    font-size: 70px;
+    font-style: normal;
+    line-height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.hero-detail > p {
+    color: #FFF;
+    margin-top: 0;
+    margin-bottom: 15px;
+    /* Headline 6 */
+    font-family: "Source Sans Pro";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.hero-filter-card {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    max-width: 550px; 
+}
+
+.hero-filter-tabs {
+    display: flex;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 1rem;
+}
+
+.filter-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #888;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -1px; 
+    transition: all 0.2s ease-in-out;
+}
+
+.filter-btn.active {
+    color: #FD602A;
+    border-bottom: 2px solid #FD602A;
+}
+
+.hero-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.hero-search-bar {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 0.25rem;
+}
+
+.hero-search-bar input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    padding: 0.75rem 0.5rem;
+    font-size: 1rem;
+}
+
+.hero-search-bar input::placeholder {
+    color: #aaa;
+}
+
+.find-meal-btn {
+    display: flex;
+    padding: 21px 48px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background: linear-gradient(96deg, #FF7A7A -39.64%, #F65900 135.31%);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.find-meal-btn:hover {
+    background-color: #e65524;
+}
+
+.hero-img {
+    width: 350px;
+    /* height: ; */
+    flex-shrink: 0;
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.hero-img img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    object-fit: contain;
+}
+
+
+.filter-btn .btn-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.hero-search-bar .search-icon {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    margin: 0 0.2rem 0 0.5rem;
+}
