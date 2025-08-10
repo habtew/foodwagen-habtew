@@ -1,0 +1,60 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3em;
+
+}
+.header > p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.logo {
+    width: 28px;
+    height: 29.977px;
+    flex-shrink: 0;
+    margin-right: 5px;
+}
+
+.logo > img {
+    width: 100%;
+}
+
+.food {
+    color: #F17228;
+    font-family: "Source Sans Pro";
+    font-size: 31.11px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 37.332px */
+    letter-spacing: -0.778px;
+}
+
+.wagen {
+    color: #FFB30E;
+    font-family: "Source Sans Pro";
+    font-size: 31.11px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: -0.778px;
+}
+
+.addmeal-btn {
+    display: flex;
+    width: 150px;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 14px;
+    border: none;
+    background: linear-gradient(98deg, #FFBA26 -8.95%, #FF9A0E 109.24%);
+
+    /* Shadow/1 */
+    box-shadow: 0 5px 10px 0 rgba(255, 174, 0, 0.26), 0 20px 40px 0 rgba(255, 174, 0, 0.29);
+}
