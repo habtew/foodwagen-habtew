@@ -1,0 +1,141 @@
+.footer-container {
+    background-color: #212529;
+    color: #adb5bd;
+    padding: 4rem 6rem 2rem 6rem;
+    margin-top: 0;
+}
+
+.footer-main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-bottom: 2rem;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+.footer-column h4,
+.footer-subscribe h5 {
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+.footer-column a {
+    display: block;
+    color: #adb5bd;
+    text-decoration: none;
+    margin-bottom: 0.75rem;
+    font-size: 0.9rem;
+    transition: color 0.2s ease;
+}
+
+.footer-column a:hover {
+    color: #ffffff;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1.2rem;
+    margin-bottom: 2.5rem;
+}
+
+.social-icons a {
+    color: #ffffff;
+    font-size: 1.2rem;
+    transition: color 0.2s ease;
+}
+
+.social-icons a:hover {
+    color: #fca311;
+}
+
+.newsletter {
+    display: flex;
+    gap: 5px;
+}
+
+.newsletter-form {
+    display: flex;
+    position: relative;
+    align-items: center;
+    max-width: 350px;
+}
+
+.newsletter-form input {
+    background-color: #343a40;
+    border: 1px solid #495057;
+    border-radius: 8px;
+    padding: 0.8rem 1rem 0.8rem 2.5rem;
+    color: #ffffff;
+    width: 100%;
+    outline: none;
+}
+
+.newsletter-form input::placeholder {
+    color: #6c757d;
+}
+
+.newsletter-form .email-icon {
+    position: absolute;
+    left: 1rem;
+    color: #6c757d;
+    font-size: 1.2rem;
+}
+
+.newsletter button {
+    display: flex;
+    width: 133px;
+    /* padding: 21px 24px; */
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background: linear-gradient(93deg, #FFB800 -47.72%, #FF8A00 136.81%);
+
+    /* Button shadow ! */
+    box-shadow: 0 5px 8px 0 rgba(222, 151, 0, 0.24), 0 14px 32px 0 rgba(255, 178, 14, 0.29);
+
+    color: #FFF;
+    text-align: center;
+
+    /* Button Bold */
+    font-family: "Source Sans Pro";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 18px */
+    border: none;
+    cursor: pointer;
+}
+
+.newsletter-form button:hover {
+    opacity: 0.9;
+}
+
+.footer-bottom {
+    border-top: 1px solid #343a40;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+.footer-bottom .heart {
+    color: #fca311;
+}

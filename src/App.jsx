@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import Header from './components/header/Header'
 import Hero from './components/hero/Hero'
 import Main from './components/Main/Main'
+import Footer from './components/Footer/Footer'
 import './App.css'
 
 
@@ -63,6 +64,7 @@ function App() {
         isLoading={isLoading}
         error={error}
         />
+        <Footer />
     </div>
   )
 }
